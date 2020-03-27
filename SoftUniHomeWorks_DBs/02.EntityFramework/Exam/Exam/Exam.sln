@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetHunters.Data", "PlanetHunters.Data\PlanetHunters.Data.csproj", "{534E8CE2-6832-4DB0-A63C-90559FC44ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetHunters.Data.Provider", "PlanetHunters.Data.Provider\PlanetHunters.Data.Provider.csproj", "{DCE1B620-96DD-4C35-A036-F631C9848FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetHunters.App", "PlanetHunters.App\PlanetHunters.App.csproj", "{8ABD899A-0B72-415F-AE23-93BA6632B051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetHuner.Import", "PlanetHuner.Import\PlanetHuner.Import.csproj", "{4552AFC9-73FD-42BA-A34A-161BFA6AEEF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetHunter.DTO", "PlanetHunter.DTO\PlanetHunter.DTO.csproj", "{8F39BDCA-DEB4-4740-95A7-CA24B903E892}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{534E8CE2-6832-4DB0-A63C-90559FC44ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534E8CE2-6832-4DB0-A63C-90559FC44ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534E8CE2-6832-4DB0-A63C-90559FC44ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534E8CE2-6832-4DB0-A63C-90559FC44ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE1B620-96DD-4C35-A036-F631C9848FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE1B620-96DD-4C35-A036-F631C9848FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE1B620-96DD-4C35-A036-F631C9848FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE1B620-96DD-4C35-A036-F631C9848FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABD899A-0B72-415F-AE23-93BA6632B051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABD899A-0B72-415F-AE23-93BA6632B051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABD899A-0B72-415F-AE23-93BA6632B051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABD899A-0B72-415F-AE23-93BA6632B051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4552AFC9-73FD-42BA-A34A-161BFA6AEEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4552AFC9-73FD-42BA-A34A-161BFA6AEEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4552AFC9-73FD-42BA-A34A-161BFA6AEEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4552AFC9-73FD-42BA-A34A-161BFA6AEEF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F39BDCA-DEB4-4740-95A7-CA24B903E892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F39BDCA-DEB4-4740-95A7-CA24B903E892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F39BDCA-DEB4-4740-95A7-CA24B903E892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F39BDCA-DEB4-4740-95A7-CA24B903E892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+<student>
+    <name>Ivan Ivanov</name>
+    <birthDate>1999/12/23</birthDate>
+    <phoneNumber>0000000000</phoneNumber>
+    <email>ivan.ivanov@abb.bg</email>
+    <univercity>Software Univercity</univercity>
+    <specialty>C# Web Developer</specialty>
+    <facultyNumber>12354355767</facultyNumber>
+    <exams>
+        <exam>
+            <name>Programming Basics</name>
+            <dateTaken>2017/01/01</dateTaken>
+            <grade>6.0</grade>
+        </exam>
+        <exam>
+            <name>Database Basics</name>
+            <dateTaken>2017/01/01</dateTaken>
+            <grade>6.0</grade>
+        </exam>
+        <exam>
+            <name>Java Basics</name>
+            <dateTaken>2017/01/01</dateTaken>
+            <grade>6.0</grade>
+        </exam>
+    </exams>
+</student>

@@ -1,0 +1,53 @@
+CREATE TABLE Directors (
+	Id INT PRIMARY KEY IDENTITY(1, 1),
+	DirectorName VARCHAR(255) NOT NULL,
+	Notes TEXT
+)
+
+CREATE TABLE Categories (
+	Id INT PRIMARY KEY IDENTITY(1, 1),
+	CategorieName VARCHAR(255) NOT NULL,
+	Notes TEXT
+)
+
+CREATE TABLE Genres  (
+	Id INT PRIMARY KEY IDENTITY(1, 1),
+	GenerName VARCHAR(255) NOT NULL,
+	Notes TEXT
+)
+
+CREATE TABLE Movies (
+	Id INT PRIMARY KEY IDENTITY(1, 1),
+	Title NVARCHAR(255) NOT NULL,
+	DirectorId INT FOREIGN KEY REFERENCES Directors(Id),
+	CopyrightYear DATE,
+	Length INT,
+	GenreId INT FOREIGN KEY REFERENCES Genres (Id),
+	CategoryId INT FOREIGN KEY REFERENCES Categories(Id),
+	Rating INT,
+	Notes TEXT
+)
+
+INSERT INTO Directors VALUES('Pesho', NULL)
+INSERT INTO Directors VALUES('Gosho', NULL)
+INSERT INTO Directors VALUES('Gaco', NULL)
+INSERT INTO Directors VALUES('Paco', NULL)
+INSERT INTO Directors VALUES('Baco', NULL)
+
+INSERT INTO Categories VALUES('Action', NULL)
+INSERT INTO Categories VALUES('Drama', NULL)
+INSERT INTO Categories VALUES('Comedy', NULL)
+INSERT INTO Categories VALUES('Horror', NULL)
+INSERT INTO Categories VALUES('Triller', NULL)
+
+INSERT INTO Genres  VALUES('Action', NULL)
+INSERT INTO Genres  VALUES('Drama', NULL)
+INSERT INTO Genres  VALUES('Comedy', NULL)
+INSERT INTO Genres  VALUES('Horror', NULL)
+INSERT INTO Genres  VALUES('Triller', NULL)
+
+INSERT INTO Movies VALUES('Title', 1, NULL, 20, 1, 2, 11, NULL)
+INSERT INTO Movies VALUES('Title1', 2, NULL, 30, 2, 1, 2, NULL)
+INSERT INTO Movies VALUES('Title2', 3, NULL, 40, 3, 2, 7, NULL)
+INSERT INTO Movies VALUES('Title3', 4, NULL, 50, 4, 3, -1, 'Adski tup')
+INSERT INTO Movies VALUES('Title4', 5, NULL, 60, 5, 5, 2, NULL)

@@ -1,0 +1,61 @@
+﻿<Window x:Class="Hospital.GUI.AddUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital.GUI"
+        mc:Ignorable="d"
+        Title="AddUserWindow" Height="800" Width="600">
+    <Border Padding="5">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BackButton" Click="BackButton_Click" Grid.Column="0">Back</Button>
+            </Grid>
+            
+            <!-- Description -->
+            <TextBlock Text="First Name" Margin="0 10 0 0"/>
+            <TextBox x:Name="FirstName" Padding="2"/>
+
+            <!-- Description -->
+            <TextBlock Text="Last Name" Margin="0 10 0 0"/>
+            <TextBox x:Name="LastName" Padding="2"/>
+
+            <!-- Address -->
+            <TextBlock Text="Address"  Margin="0 10 0 0"/>
+            <TextBox x:Name="Address" Padding="2"/>
+
+            <!-- Email -->
+            <TextBlock Text="Email" Margin="0 10 0 0"/>
+            <TextBox x:Name="Email" Padding="2"/>
+
+            <!-- Date Of Birth -->
+            <TextBlock Text="Date Of Birth"  Margin="0 10 0 0"/>
+            <DatePicker x:Name="DateOfBirth"/>
+            
+            <!-- Has Insurance -->
+            <CheckBox x:Name="HasInsurance"  Margin="0 10 0 0">Has Insurance</CheckBox>
+
+            <Border Margin="0 10 0 0" BorderBrush="Black" BorderThickness="2">
+                <StackPanel>
+                    <Image Height="200" x:Name="PatientPhoto" Grid.Column="1" />
+                </StackPanel>
+            </Border>
+            <Button Click="LoadButton_Click">Load Photo</Button>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Margin="0 10 0 0" x:Name="AddUser" Click="AddUser_Click"  Grid.Column="0">Add Patient</Button>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
